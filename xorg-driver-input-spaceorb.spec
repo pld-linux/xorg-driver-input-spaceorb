@@ -1,12 +1,12 @@
 Summary:	X.org input driver for SpaceOrb devices
 Summary(pl):	Sterownik wej¶ciowy X.org dla urz±dzeñ SpaceOrb
 Name:		xorg-driver-input-spaceorb
-Version:	1.0.0.2
+Version:	1.0.0.3
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC2/driver/xf86-input-spaceorb-%{version}.tar.bz2
-# Source0-md5:	37f37f7707bdb6d15277c91677243362
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/driver/xf86-input-spaceorb-%{version}.tar.bz2
+# Source0-md5:	967a2c91f232e6a2d57cb41ffe00d98c
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -14,7 +14,7 @@ BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-proto-inputproto-devel
 BuildRequires:	xorg-proto-randrproto-devel
-BuildRequires:	xorg-util-util-macros >= 0.99.1
+BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRequires:	xorg-xserver-server-devel >= 0.99.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -42,8 +42,7 @@ Sterownik wej¶ciowy X.org dla urz±dzeñ SpaceOrb.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	drivermandir=%{_mandir}/man4
+	DESTDIR=$RPM_BUILD_ROOT
 
 rm -f $RPM_BUILD_ROOT%{_libdir}/xorg/modules/*/*.la
 
@@ -54,4 +53,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog
 %attr(755,root,root) %{_libdir}/xorg/modules/input/spaceorb_drv.so
-#%{_mandir}/man4/spaceorb.4x*
+#%{_mandir}/man4/spaceorb.4*
