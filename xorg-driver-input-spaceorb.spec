@@ -1,12 +1,12 @@
 Summary:	X.org input driver for SpaceOrb devices
 Summary(pl):	Sterownik wej¶ciowy X.org dla urz±dzeñ SpaceOrb
 Name:		xorg-driver-input-spaceorb
-Version:	1.0.0.3
+Version:	1.0.0.5
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/driver/xf86-input-spaceorb-%{version}.tar.bz2
-# Source0-md5:	967a2c91f232e6a2d57cb41ffe00d98c
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/driver/xf86-input-spaceorb-%{version}.tar.bz2
+# Source0-md5:	961ede9c4087a6d5666a89d5713623a3
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -51,6 +51,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog
+%doc COPYING ChangeLog
 %attr(755,root,root) %{_libdir}/xorg/modules/input/spaceorb_drv.so
 #%{_mandir}/man4/spaceorb.4*
