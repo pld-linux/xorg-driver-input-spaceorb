@@ -1,5 +1,5 @@
 Summary:	X.org input driver for SpaceOrb devices
-Summary(pl.UTF-8):   Sterownik wejściowy X.org dla urządzeń SpaceOrb
+Summary(pl.UTF-8):	Sterownik wejściowy X.org dla urządzeń SpaceOrb
 Name:		xorg-driver-input-spaceorb
 Version:	1.1.0
 Release:	0.1
